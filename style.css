@@ -1,20 +1,97 @@
+/* 🌙 DARK MODE (default) */
 body {
     font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+/*  LIGHT MODE */
+.light {
+    background: #f8fafc;
+    color: black;
+}
+
+/* Container */
+.container {
     text-align: center;
-    margin-top: 50px;
+    width: 400px;
 }
 
-input {
+/* Search box */
+.search-box input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-box button {
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+/* Button hover */
+.search-box button:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Controls */
+.controls button {
+    margin: 5px;
     padding: 8px;
-    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
 }
 
-button {
+.controls button:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* STOCK CARD (DARK) */
+.stock-card {
+    background: #1e293b;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* STOCK CARD (LIGHT) */
+.light .stock-card {
+    background: #e2e8f0;
+    color: black;
+}
+
+/* HOVER (DARK) */
+.stock-card:hover {
+    transform: scale(1.05);
+    background: #334155;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/*  HOVER (LIGHT) */
+.light .stock-card:hover {
+    background: #cbd5f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Theme button */
+#themeToggle {
+    margin-top: 10px;
     padding: 8px 12px;
     cursor: pointer;
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 18px;
+    border-radius: 5px;
+    border: none;
 }
